@@ -24,10 +24,10 @@ try {
 
     Write-Host "`nInstalling Atom..."
     if ($ShowUI) {
-        Start-Process $installerExePath -Wait
+        Start-Process $filePath -Wait
     }
     else {
-        Start-Process $installerExePath -ArgumentList "--silent" -Wait
+        Start-Process $filePath -ArgumentList "--silent" -Wait
     }
 }
 finally {
